@@ -1,0 +1,27 @@
+{
+  "name": "are-you-happy-server",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build-ts": "tsc",
+    "build": "tsc && webpack && zip -r ./build/bundle.zip ./build/bundle.js"
+  },
+  "dependencies": {
+    "@types/aws-serverless-express": "^3.3.3",
+    "@types/express": "^4.17.3",
+    "@types/node": "^13.9.5",
+    "@types/uuid": "^7.0.2",
+    "aws-sdk": "^2.648.0",
+    "aws-serverless-express": "^3.3.8",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
